@@ -1,1 +1,0 @@
-java -Xmx512m -jar hop3xEtudiant/lib/Hop3xEtudiant.jar
