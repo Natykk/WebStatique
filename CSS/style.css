@@ -1,3 +1,9 @@
+.titre_principal{
+  text-align: center;
+}
 html{
-    background-color:white;
+  background-color: black;
+}
+h1 {
+  color: orange;   
 }
