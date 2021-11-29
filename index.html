@@ -2,8 +2,7 @@
 <html lang="fr">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel='stylesheet' href='CSS/style.css' />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel='stylesheet' type='text/css' href='{{ url_for('static', filename='CSS/style.css') }}' />
 
 <head>
 	<meta charset="utf-8">
@@ -13,9 +12,21 @@
 </head>
 
 <body>
-	<h1 class="titre_principal">
-		La Gastronomie Vidéoludique
-	</h1>
+  <div class="menu">
+<nav>
+    <label for="toggle">☰</label>
+    <input type="checkbox" id="toggle">
+        <div class="main_pages">
+            <a href="#">Accueil</a>
+            <a href="#">Les Recettes</a>
+            <a href="#">A Propos</a>
+        </div>
+    </nav>
+  </div>
+          <video autoplay muted loop>
+            <source src="https://d2vkoy1na2a6o6.cloudfront.net/videos/fsg-bg-wide-17f6d007dfa2530ee564ea815450c21972c0721c6aa5f202175e2721c2df366c1afc5dc05f88a118297ecfafdd9612bb02d198f17096b37c1e517fe53f4f11d7.webm" type="video/webm">
+        </video>
+  
 </body>
 
 </html>
