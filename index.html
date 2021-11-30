@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel='stylesheet' type='text/css' href='{{ url_for('static', filename='CSS/style.css') }}' />
+<link rel='stylesheet' type='text/css' href='CSS/style.css'/>
 
-<head>
-	<meta charset="utf-8">
+
 	<title>
 		La Gastronomie Vidéoludique
 	</title>
 </head>
 
 <body>
-  <div class="menu">
-<nav>
-    <label for="toggle">☰</label>
+
+	<nav class="menu">
+		<label for="toggle">☰</label>
     <input type="checkbox" id="toggle">
         <div class="main_pages">
             <a href="#">Accueil</a>
@@ -22,11 +22,46 @@
             <a href="#">A Propos</a>
         </div>
     </nav>
-  </div>
-          <video autoplay muted loop>
+<div class="bloc_video">
+<video autoplay muted loop>
             <source src="https://d2vkoy1na2a6o6.cloudfront.net/videos/fsg-bg-wide-17f6d007dfa2530ee564ea815450c21972c0721c6aa5f202175e2721c2df366c1afc5dc05f88a118297ecfafdd9612bb02d198f17096b37c1e517fe53f4f11d7.webm" type="video/webm">
         </video>
-  
+</div>
+  <div class="wrapper">
+    
+    <div id="Item1" class="item">
+      <h1>Title</h1>
+      
+      <p class="text_item">Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+    <div id="Item2" class="item">
+      
+      <h1>Title</h1>
+      <p class="text_item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+    <div id="Item3" class="item">
+      <h1>Title</h1>
+      
+      <p class="text_item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+    <div id="Item4" class="item">
+      <h1>Title</h1>
+      
+      <p class="text_item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+    <div id="Item5" class="item">
+      <h1>Title</h1>
+      
+      <p class="text_item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+    <div class="empty"></div>
+</div>
+
 </body>
 
 </html>
