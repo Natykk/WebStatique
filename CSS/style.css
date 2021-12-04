@@ -1,37 +1,24 @@
-
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+html {
+  scroll-behavior: smooth;
 }
-.bloc_video video {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 0;
+body {
+  margin: 0px;
+  padding: 0px;
 }
-
-/********************************
-* menu
-*********************************/
-
 nav 
 {
     width: 100%;
     background-image: url('https://d2vkoy1na2a6o6.cloudfront.net/images/nav/newNav/wood_middle_repeat-b357e74839b5f16173c2f35d36ce22cae24d5b552e2eb1dd1fd7d3091eeccca8eb8ab5c0a2c42e9476357ac2c744e8e22ddc08c5d27be8c670fb9630065a9c01.png');
 }
  
-nav .main_pages 
+nav .onglet 
 {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
  
-nav .main_pages a 
+nav .onglet a 
 {
     width: 20%;
     display: flex;
@@ -42,7 +29,7 @@ nav .main_pages a
     font-family: Arial, sans-serif;
     color: white;
 }
-nav .main_pages a:hover
+nav .onglet a:hover
 {
     color:orange;
 }
@@ -50,17 +37,97 @@ label, #toggle
 {
     display: none;
 }
- /********************************
-* menu responsive
-*********************************/
-@media all and (max-width: 991px)
-{
-    nav
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  color: #fff;
+  padding: 40px;
+  background: url("https://www.hearthstone-decks.com/upload/news/2015/juin/09/baston-taverne-grand.jpg");
+}
+header h1 {
+  font-size: 50px;
+}
+header h4 {
+  margin-top: -20px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+
+
+.slider_recettes {
+  background-color: #2a3033;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 0 50px;
+  -ms-overflow-style: none;
+  border-radius: 10px;
+  padding: 30px 60px;
+  padding-right: 0;
+}
+
+.item {
+  background-color: black;
+  padding: 0 10px;
+  height: 250px;
+  width: 250px;
+  border-radius: 5px;
+}
+#Item1 {
+  background-image: url("https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/s9/S9KSABSN6F971585054151264.jpg");
+  height: 250px;
+  width: 250px;
+}
+#Item2 {
+  background-image: url("https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/8M94V6OA3RCZ1604483737626.jpg");
+}
+.text_item {
+  color: black;
+  background-color: rgb(192, 192, 192, 0.7);
+  border-radius: 5px;
+}
+.empty {
+  width: 10px;
+}
+
+footer {
+  margin-top: 40px;
+  background-color:#4b3516;
+  color: #fff;
+  padding: 30px 100px;
+}
+footer h1 {
+  border-bottom: 1px solid white;
+  width: 20%;
+  padding-bottom: 5px;
+}
+footer .services {
+  margin-top: -10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .services .service {
+  margin-right: 30px;
+}
+footer .services .service p {
+  max-width: 300px;
+}
+footer #contact {
+  color: rgb(181, 181, 181);
+}
+
+@media screen and (max-width: 780px) {
+   nav
     {
         height: 60px;
     }
  
-    nav .main_pages 
+    nav .onglet 
     {
         display: none;
         flex-direction: column;
@@ -70,10 +137,10 @@ label, #toggle
         z-index: 1000;
     }
  
-    nav .main_pages a {
+    nav .onglet a {
         width: 50%;
     }
-        nav .main_pages a:hover
+        nav .onglet a:hover
     {
         color:orange;
     }
@@ -90,7 +157,7 @@ label, #toggle
         cursor: pointer;
     }
  
-    #toggle:checked + .main_pages {
+    #toggle:checked + .onglet {
         display: flex;
     }
 }
@@ -98,44 +165,7 @@ label, #toggle
 h1 {
     text-align: center;
 }
- /********************************
-* slider
-*********************************/
-.wrapper {
-    background-color: #2a3033;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    grid-gap: 0 50px;
-    -ms-overflow-style: none;
-    border-radius: 10px;
-    padding: 30px 60px;
-    padding-right: 0;  
-}
-
-.item {
-    background-color: black;
-    padding: 0 10px;
-    height: 250px;
-    width: 250px;
-    border-radius: 5px;
-}
-#Item1{
-  background-image: url("https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/s9/S9KSABSN6F971585054151264.jpg");
-  height: 250px;
-  width: 250px;
-}
-#Item2{
-  background-image: url("https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/8M94V6OA3RCZ1604483737626.jpg");
-}
-.text_item{
-  color: black;
-  background-color: rgb(192,192,192,.7);
-  border-radius: 5px;
-}
-.empty {
-    width: 10px;
-}
+  footer {
+    padding: 30px;
+  }
 
