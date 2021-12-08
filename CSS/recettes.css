@@ -1,0 +1,79 @@
+html{
+  background-image: url("https://d2vkoy1na2a6o6.cloudfront.net/images/ui/parchment-f5126a8249a32eb235b139078b4cc13b5fb9d2c29b0e825569312681123d721a1f2e1addb4bad78f979933e561361e2ee2c5f5881ab4fef5385c66c6276c3b44.jpg")
+}
+.tarte_pomme {
+    background-image:  url("https://i.imgur.com/dueNQ5u.jpg");
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarte_pomme h1 {
+    font-weight: bold;
+    font-size: 48px;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.description {
+    margin: 32px 320px 0 320px;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+}
+
+#info_recettes {
+    display: flex;
+    justify-content: center;
+}
+
+#info_recettes img {
+    width: 480px;
+    height: 80px;
+}
+
+hr {
+    width: 70%;
+    color: gray;
+}
+
+.ingredients {
+    margin-bottom: 32px;
+}
+
+h3{
+    margin-left: 160px;
+    font-weight: 300;
+}
+
+li {
+    margin-left: 160px;
+    padding-top: 16px;
+    list-style-type: none;    
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.ingredients li:before {
+    content: "- ";    
+}
+
+#info-preparation {
+    display: flex;
+    justify-content: center;
+}
+
+#info-preparation img {
+    width: 480px;
+    height: 112px;
+    margin: 16px 0;
+}
+
+.consignes {
+    margin-bottom: 32px;
+}
+
+.consignes li {
+    width:70%;
+    list-style-type: decimal;
+}

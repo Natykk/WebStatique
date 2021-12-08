@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
-
+<!--- Faut corriger les pb W3C Validator  -->
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>La Gastronomie videoludique</title>
-	<link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/recettes.css">
+	<link rel="stylesheet" href="CSS/style.css" media="screen">
+  <link rel="stylesheet" href="CSS/recettes.css" media="screen">
+  <link rel="stylesheet" href="CSS/impression.css" media="print">
 
 </head>
+<body>
+  	<nav class="menu">
+		<label for="toggle">☰</label>
+    <input type="checkbox" id="toggle">
+    <div class="onglet">
+      <a href="index.html">Accueil</a>
+      <a href="#recettes">Les Recettes</a>
+      <a href="#footer">A Propos</a>
+    </div>
+  </nav>
 
+
+   <div class = "tarte_pomme">
+<h1>Tarte au Pommes</h1>
+</div>
+<section class = "description"> 
+ <p> Il y a des Dessert et Patisserie Classique et puis il y a la Tarte au pomme un incontournable </p>
+</section>
+<div id = "info_recettes">
+<!--- Faire les petites info du genre temps total , pour combien , dificulté  -->
+</div>
+<hr>
+<div class = "ingredients">
+  <h3>Ingredients</h3>
+  <ul></ul>
+    <li>Une Pate feuilleté</li>
+    <li>90 g de sucre</li>
+    <li>5 pomme</li>
+    <li>2 oeufs</li>
+    <li>60 g de beurre</li>
+  </ul>
+  <div id="info-preparation">
+  <!--- Faire les petites info du genre temps de preparation , temps de cuisson , temps total -->
+  </div>
+</div>
+  <hr>
+<h3>Consignes</h3>
+<div class= "consignes">
+  <ol>
+    <li>Mettre la pâte feuilletée dans un plat à tarte, la piquer avec une fourchette, garnir avec les pommes coupées en morceaux.</li>
+
+    <li>Mélanger 90g sucre, les deux œufs, le beurre fondu et verser sur la tarte. </li>
+
+    <li>Enfournez, thermostat 6-7 ( 200°) pendant 35 minutes environ.</li>
+    </ol>
+</div>
+
+
+    <footer id="footer">
+    <h1>Bas de page</h1>
+    <div class="services">
+
+      <div class="service">
+        <h3>Truc a mettre</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quidem recusandae explicabo veniam voluptatem voluptatum reprehenderit dignissimos ipsum magnam accusantium, dolores odio, dolorem provident sapiente consequuntur harum eaque veritatis? Eveniet.</p>
+      </div>
+
+      <div class="service">
+        <h3>Truc a mettre</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quidem recusandae explicabo veniam voluptatem voluptatum reprehenderit dignissimos ipsum magnam accusantium, dolores odio, dolorem provident sapiente consequuntur harum eaque veritatis? Eveniet.</p>
+      </div>
+
+      <div class="service">
+        <h3>Truc a mettre</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quidem recusandae explicabo veniam voluptatem voluptatum reprehenderit dignissimos ipsum magnam accusantium, dolores odio, dolorem provident sapiente consequuntur harum eaque veritatis? Eveniet.</p>
+      </div>
+
+    </div>
+
+    <p id="contact">Contact : nat.gauteron@gmail.com | &copy; 2021, Nathan Gauteron.</p>
+  </footer>
+</body>
