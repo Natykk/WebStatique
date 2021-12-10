@@ -1,26 +1,77 @@
 html{
-  background-image: url("https://d2vkoy1na2a6o6.cloudfront.net/images/ui/parchment-f5126a8249a32eb235b139078b4cc13b5fb9d2c29b0e825569312681123d721a1f2e1addb4bad78f979933e561361e2ee2c5f5881ab4fef5385c66c6276c3b44.jpg")
+  background-image: url("../media/fond_recettes.jpg");
 }
-.tarte_pomme {
-    background-image:  url("https://i.imgur.com/dueNQ5u.jpg");
+
+.text_icon{
     height: 640px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.tarte_pomme h1 {
-    font-weight: bold;
+#bruschetta{
+  background-image:  url("../media/bruschetta.jpg"); 
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#soup{
+ background-image: url("../media/soup.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#tarte_pomme{
+  background-image:url("../media/tarte_pomme.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#lait_miel{
+  background-image: url("../media/lait_miel.png");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+#mushroom{
+  background-image: url("../media/mushroom.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#poulet{
+  background-image: url("../media/poulet.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+span{
+  margin: 10px;
+}
+.text_icon h1 {
     font-size: 48px;
     color: white;
     text-shadow: 1px 1px black;
 }
 
 .description {
-    margin: 32px 320px 0 320px;
-    display: inline-block;
     text-align: center;
     font-size: 18px;
+    justify-content: center;
+    display: flex;
 }
 
 #info_recettes {
@@ -43,12 +94,12 @@ hr {
 }
 
 h3{
-    margin-left: 160px;
+    text-align: center;
     font-weight: 300;
 }
 
 li {
-    margin-left: 160px;
+    text-align: center;
     padding-top: 16px;
     list-style-type: none;    
     color: rgba(0, 0, 0, 0.8);
@@ -74,6 +125,30 @@ li {
 }
 
 .consignes li {
-    width:70%;
     list-style-type: decimal;
+}
+@media (max-width: 650px){
+  .description{
+    margin: 0px;
+    display: inline-block;
+    text-align: center;
+    font-size:18px;
+  }
+  .consignes{
+    margin: 0px;
+    text-align: center;
+  }
+  h3{
+    margin: 0px;
+  }
+  li{
+    margin-left: 0px;
+
+  }
+  .text_icon h1{
+    font-size:32px;
+  }
+  .text_icon{
+    height:440px ;
+  }
 }
