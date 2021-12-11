@@ -154,15 +154,15 @@ footer h1 {
   width: 20%;
   padding-bottom: 5px;
 }
-footer .services {
+footer .textes_footer {
   margin-top: -10px;
   display: flex;
   flex-wrap: wrap;
 }
-footer .services .service {
+footer .textes_footer .texte_footer {
   margin-right: 30px;
 }
-footer .services .service p {
+footer .textes_footer .texte_footer p {
   max-width: 300px;
 }
 footer #contact {
