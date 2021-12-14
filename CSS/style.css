@@ -12,6 +12,7 @@
     font-display: swap;
 }
 html {
+  
   scroll-behavior: smooth;
   font-family: BlizQuadrata Web,Arial;
 }
@@ -169,10 +170,21 @@ footer #contact {
   color: rgb(181, 181, 181);
 }
 
-@media screen and (max-width: 780px) {
+h1 h2 {
+    text-align: center;
+}
+  footer {
+    margin-top: 10%;
+    padding: 30px;
+  }
+
+@media screen and (max-width: 801px) {
    nav
     {
         height: 60px;
+    }
+    footer{
+      margin-top:42%;
     }
  
     nav .onglet 
@@ -214,9 +226,3 @@ footer #contact {
   }
 }
 
-h1 h2 {
-    text-align: center;
-}
-  footer {
-    padding: 30px;
-  }

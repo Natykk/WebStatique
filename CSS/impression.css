@@ -4,3 +4,11 @@ footer{
 nav{
   display: none;
 }
+#info_recettes{
+display: flex;
+
+justify-content: center;
+}
+#info_recettes p {
+  margin-right: 25px;
+}
